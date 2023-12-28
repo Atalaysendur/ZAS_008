@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>Malzeme Bilgilerini Dönen Soap FG</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZAS_008_FG_MLZMEINFOTOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZAS_008_FG_MLZMEINFO</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>ZAS_008_FM_MLZMEINFO</FUNCNAME>
+     <REMOTE_CALL>R</REMOTE_CALL>
+     <SHORT_TEXT>Malzeme Bilgileri Dönen Soap</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IV_MATNR</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>MATNR</TYP>
+      </RSIMP>
+     </IMPORT>
+     <CHANGING>
+      <RSCHA>
+       <PARAMETER>CS_MLZMEINFO</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>ZAS_GIT_009_S_MLZMEINFO</TYP>
+      </RSCHA>
+      <RSCHA>
+       <PARAMETER>CT_MLZMEINFO</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>ZAS_GIT_009_TT_MLZMEINFO2</TYP>
+      </RSCHA>
+      <RSCHA>
+       <PARAMETER>CS_MLZMEINFORTRN</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>ZAS_GIT_009_SS_MLZMEINFO3</TYP>
+      </RSCHA>
+     </CHANGING>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IV_MATNR</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Malzeme numarası</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>CS_MLZMEINFO</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Malzeme Info Structure</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>CT_MLZMEINFO</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Malzeme Info2 TT</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>CS_MLZMEINFORTRN</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Malzeme Info3 Structure</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>
